@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff5f7">
+  <meta name="description" content="Uma surpresa especial feita com carinho.">
+  <title>Uma surpresa para você 💐</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="card">
+    <span class="eyebrow">UMA MENSAGEM ESPECIAL</span>
+
+    <h1>Fiz uma coisinha<br>para você...</h1>
+
+    <p class="subtitle">
+      Preparei uma surpresa com muito carinho. 💗
+    </p>
+
+    <button id="surpriseButton" type="button">
+      Clique para ter uma surpresa ✨
+    </button>
+
+    <section id="surprise" class="surprise" hidden aria-live="polite">
+      <svg
+        class="bouquet"
+        viewBox="0 0 400 330"
+        role="img"
+        aria-label="Buquê de lírios cor-de-rosa e brancos"
+      >
+        <defs>
+          <linearGradient id="pink" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#fff0f5"/>
+            <stop offset="55%" stop-color="#f3a0b8"/>
+            <stop offset="100%" stop-color="#cf5e82"/>
+          </linearGradient>
+
+          <linearGradient id="white" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#ffffff"/>
+            <stop offset="100%" stop-color="#f5d8df"/>
+          </linearGradient>
+
+          <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#fff5ed"/>
+            <stop offset="100%" stop-color="#e9bfc9"/>
+          </linearGradient>
+
+          <g id="lily">
+            <path d="M0 0 C-35 -16 -53 -51 -33 -67 C-10 -60 0 -24 0 0Z"
+                  fill="url(#pink)" stroke="#d77c98" stroke-width="1.5"/>
+            <path d="M0 0 C-15 -39 -7 -72 8 -73 C26 -53 14 -19 0 0Z"
+                  fill="url(#white)" stroke="#dba0b3" stroke-width="1.5"/>
+            <path d="M0 0 C9 -40 35 -63 48 -47 C47 -22 18 -4 0 0Z"
+                  fill="url(#pink)" stroke="#d77c98" stroke-width="1.5"/>
+            <path d="M0 0 C29 -17 57 -15 57 1 C41 17 17 13 0 0Z"
+                  fill="url(#white)" stroke="#dba0b3" stroke-width="1.5"/>
+            <path d="M0 0 C-30 -4 -48 14 -34 29 C-16 32 -4 15 0 0Z"
+                  fill="url(#pink)" stroke="#d77c98" stroke-width="1.5"/>
+            <path d="M0 0 C-4 22 8 41 22 33 C31 18 14 5 0 0Z"
+                  fill="url(#white)" stroke="#dba0b3" stroke-width="1.5"/>
+
+            <circle cx="2" cy="-1" r="5" fill="#e6b54e"/>
+            <g stroke="#bd8534" stroke-width="1.5" stroke-linecap="round">
+              <path d="M0 -2 L-10 -16"/>
+              <path d="M3 -3 L11 -18"/>
+              <path d="M5 0 L20 -5"/>
+              <path d="M1 2 L-8 12"/>
+            </g>
+            <g fill="#a76b35">
+              <circle cx="-10" cy="-16" r="2"/>
+              <circle cx="11" cy="-18" r="2"/>
+              <circle cx="20" cy="-5" r="2"/>
+              <circle cx="-8" cy="12" r="2"/>
+            </g>
+          </g>
+        </defs>
+
+        <!-- Caules -->
+        <g fill="none" stroke="#477653" stroke-width="4" stroke-linecap="round">
+          <path d="M190 285 Q160 205 91 117"/>
+          <path d="M200 288 Q194 190 190 82"/>
+          <path d="M210 288 Q245 194 302 120"/>
+          <path d="M199 284 Q180 220 160 158"/>
+          <path d="M205 286 Q244 223 260 165"/>
+        </g>
+
+        <!-- Folhas -->
+        <g fill="#58845c" stroke="#3f6947" stroke-width="1">
+          <path d="M178 240 Q126 222 115 181 Q159 188 178 240Z"/>
+          <path d="M219 244 Q273 217 286 178 Q242 191 219 244Z"/>
+          <path d="M185 211 Q141 185 143 151 Q175 171 185 211Z"/>
+          <path d="M225 211 Q263 187 263 151 Q234 173 225 211Z"/>
+          <path d="M195 266 Q155 261 139 233 Q174 233 195 266Z"/>
+          <path d="M211 267 Q250 256 269 230 Q233 232 211 267Z"/>
+        </g>
+
+        <!-- Lírios do buquê -->
+        <g class="flower flower-one" transform="translate(94 114) rotate(-12) scale(.82)">
+          <use href="#lily"/>
+        </g>
+        <g class="flower flower-two" transform="translate(190 91) scale(.94)">
+          <use href="#lily"/>
+        </g>
+        <g class="flower flower-three" transform="translate(300 119) rotate(15) scale(.82)">
+          <use href="#lily"/>
+        </g>
+        <g class="flower flower-four" transform="translate(148 157) rotate(-8) scale(.72)">
+          <use href="#lily"/>
+        </g>
+        <g class="flower flower-five" transform="translate(252 163) rotate(10) scale(.72)">
+          <use href="#lily"/>
+        </g>
+
+        <!-- Papel do buquê -->
+        <path d="M105 197 Q200 235 295 193 L254 300 Q200 328 148 300Z"
+              fill="url(#paper)" stroke="#dfb3bf" stroke-width="1.5"/>
+        <path d="M105 197 Q199 250 295 193 L277 230 Q200 270 125 230Z"
+              fill="#fffaf3" stroke="#dfb3bf" stroke-width="1.2"/>
+        <path d="M148 300 Q200 275 254 300 L234 316 Q201 332 168 316Z"
+              fill="#d77995"/>
+        <path d="M200 290
+                 C178 270 161 286 181 301
+                 L200 315 L221 301
+                 C242 284 221 270 200 290Z"
+              fill="#bd5275"/>
+        <path d="M200 291 L200 315" stroke="#f8cad7" stroke-width="2"/>
+      </svg>
+
+      <h2>Tenho orgulho de você ❤️</h2>
+      <p class="little-message">
+        Nunca se esqueça do quanto você é especial.
+      </p>
+    </section>
+
+    <footer>Feito com carinho ♡</footer>
+  </main>
+</body>
+</html>
